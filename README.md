@@ -1,91 +1,106 @@
-# Frontend Mentor - Stats preview card component
 
-![Design preview for the Stats preview card component coding challenge](preview.jpg)
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Overview
 
-## The challenge
+You built a Stats preview card component that displays marketing insights for a business. The design highlights analytics data (like number of companies, templates, queries) alongside a beautiful header image with a purple overlay effect.
 
-Your challenge is to build out this card component and get it looking as close to the design as possible.
+This component is fully responsive and visually engaging, making it perfect for showcasing on a portfolio.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### The challenge
 
-Your users should be able to:
+The biggest challenge was creating a colored overlay on top of the image while keeping the image fully visible and responsive.
 
-- View the optimal layout depending on their device's screen size
+Learning to properly position the overlay without breaking the layout or blocking content.
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+Managing the flex layout to ensure the image and text align well on both desktop and mobile views.
 
-## Where to find everything
+### Screenshot
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+![](./images/Screenshot_15-7-2025_174741_127.0.0.1.jpeg)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Links
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## My process
+1️⃣ Design layout: You started by building the basic HTML structure using semantic tags and flexbox for layout.
 
-## Building your project
+2️⃣ Add image with responsiveness: You used a ```<picture>``` element to support different images on mobile and desktop.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+3️⃣ Overlay implementation: You experimented with CSS techniques to create an overlay. Finally, you solved it by adding a dedicated .overlay div positioned absolutely over the image.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+4️⃣ Styling and fine-tuning: You customized fonts, colors, and spacing to match the design, then added responsive adjustments.
 
-## Deploying your project
+5️⃣ Test and refine: You verified the component on different screen sizes to ensure it looks great everywhere.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+### Built with
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- HTML
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+- CSS (Flexbox, overlays, media queries)
 
-## Create a custom `README.md`
+- Responsive images with <picture>
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### What I learned
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+- How to create a CSS overlay using an absolutely positioned div.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- How to use ```<picture>``` for responsive images.
 
-## Submitting your solution
+- The importance of checking stacking context and position: relative on parent containers when layering elements.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+- Flexbox tricks for aligning and spacing content.
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- How to handle media queries for responsive design.
 
-## Sharing your solution
 
-There are multiple places you can share your solution:
+To see how you can add code snippets, see below:
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉')
+}
+```
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### Useful resources
 
-## Got feedback for us?
+- [w3schools:](https://www.w3schools.com/howto/howto_css_overlay.asp) How TO - Overlay for overlay techniques.
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi@frontendmentor.io.
+- [Kevin Powell's video](https://www.youtube.com/watch?v=NwnZU6mWJkk) for learning about adding an overlay to a background image.
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+## Author
 
-**Have fun building!** 🚀
+- Frontend Mentor - [@jeff20501](https://www.frontendmentor.io/profile/jeff20501)
+- github - [@jeff20501](https://github.com/jeff20501)
+
+## Acknowledgments
+
+- w3schools: How TO - Overlay for overlay techniques.
+
+- Kevin Powell's video for learning about adding an overlay to a background image.
